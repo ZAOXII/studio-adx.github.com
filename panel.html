@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Client — ADX Studio</title>
+ <link rel="stylesheet" href="style.css"></head>
+<body>
+
+<header class="header">
+    <h1>Mon Panel</h1>  
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="recherches.html">Recherche</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" onclick="logout()">Déconnexion</a>
+    </nav>
+</header>
+
+<section class="panel-section">
+    <h2>Bienvenue, <span id="user-name"></span></h2>
+
+    <!-- Gestion du compte -->
+    <div class="panel-card">
+        <h3>Mes Informations</h3>
+        <p>Email : <span id="user-email"></span></p>
+        <input type="password" id="new-password" placeholder="Nouveau mot de passe">
+        <button onclick="changePassword()">Modifier le mot de passe</button>
+        <p id="password-response"></p>
+    </div>
+
+    <!-- Upload fichiers -->
+    <div class="upload-section">
+        <h3>Déposer des fichiers</h3>
+        <div id="drop-zone">Glissez vos fichiers ici ou cliquez pour sélectionner</div>
+        <input type="file" id="file-input" accept="video/*,audio/*" multiple style="display:none;">
+        <button onclick="uploadFiles()">Uploader</button>
+        <p id="upload-response"></p>
+    </div>
+
+    <!-- Liste des fichiers -->
+    <div class="video-dashboard">
+        <h3>Mes fichiers</h3>
+        <div id="user-files" class="video-grid"></div>
+    </div>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-partners">
+            <h4>Nos partenaires</h4>
+
+            <div class="partners-logos">
+                <a href="https://x.com/AkuraEsport" title="AKURA Esport">
+                    <img src="akura.png" alt="AKURA Esport">
+                </a>
+
+                <a href="https://discord.gg/GwQV9Tyf" title="Huna">
+                    <img src="projet_7.png" alt="Huna">
+                </a>
+
+                <a href="https://www.twitch.tv/adxkdx" target="_blank" title="Twitch">
+                    <img src="logo-twitch_578229-259.avif" alt="Twitch logo">
+                </a>
+                <a href="https://www.instant-gaming.com/?igr=adxkdx" target="_blank" title="instant instant-gaming">
+                    <img src="instant.png" alt="instant-gaming logo">
+                </a>
+                   <a href="https://discord.gg/TU9njhPP9Y" target="_blank" title="discord">
+                    <img src="discord.jpg" alt="discord logo">
+                </a>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2026 ADX Studio</p>
+    </div>
+</footer>
+
+</section>
+
+</body>
+<script src="main.js"></script>
+</html>

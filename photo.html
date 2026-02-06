@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Photos</title>
+    <link rel="stylesheet" href="style.css"> <!-- Style général -->
+    <link rel="stylesheet" href="photo.css"> <!-- Galerie -->
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <h1>Mes réalisations</h1>
+        <p>cliquez sur une image la voir en grands devant vous !</p>
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="avis.html">Témoignages</a>
+            <a href="recherches.html">Recherche</a>
+            <a href="panel.html">DashBoard</a>
+            <a href="contact.html">Contact</a>
+            <a href="Connexion.html">Connexion</a>
+        </nav>
+    </header>
+
+    <!-- Galerie -->
+    <main class="gallery">
+        <div class="photo"><img src="adx.png" alt="Photo 1"></div>
+        <div class="photo"><img src="kdx.png" alt="Photo 2"></div>
+        <div class="photo"><img src="ad.png" alt="Photo 3"></div>
+        <div class="photo"><img src="a.png" alt="Photo 4"></div>
+        <div class="photo"><img src="b.png" alt="Photo 5"></div>
+        <div class="photo"><img src="c.png" alt="Photo 6"></div>
+        <div class="photo"><img src="d.png" alt="Photo 7"></div>
+        <div class="photo"><img src="e.png" alt="Photo 8"></div>
+        <div class="photo"><img src="f.png" alt="Photo 9"></div>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="Photo">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-partners">
+                <h4>Nos partenaires</h4>
+                <div class="partners-logos">
+                    <a href="https://x.com/AkuraEsport" title="AKURA Esport">
+                        <img src="akura.png" alt="AKURA Esport">
+                    </a>
+                    <a href="https://discord.gg/GwQV9Tyf" title="Huna">
+                        <img src="projet_7.png" alt="Huna">
+                    </a>
+                    <a href="https://www.twitch.tv/adxkdx" target="_blank" title="Twitch">
+                        <img src="logo-twitch_578229-259.avif" alt="Twitch logo">
+                    </a>
+                    <a href="https://www.instant-gaming.com/?igr=adxkdx" target="_blank" title="Instant Gaming">
+                        <img src="instant.png" alt="Instant Gaming logo">
+                    </a>
+                    <a href="https://discord.gg/TU9njhPP9Y" target="_blank" title="Discord">
+                        <img src="discord.jpg" alt="Discord logo">
+                    </a>
+                </div>
+            </div>
+            <p class="footer-copy">© 2026 ADX Studio</p>
+        </div>
+    </footer>
+
+    <script src="photo.js"></script>
+</body>
+</html>

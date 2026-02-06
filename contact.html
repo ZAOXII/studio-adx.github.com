@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact — ADX Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Contact</h1>
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="avis.html">Témoignages</a>
+        <a href="recherches.html">Recherche</a>
+        <a href="panel.html">DashBoard</a>
+        <a href="contact.html">Contact</a>
+        <a href="Connexion.html">Connexion</a>
+    </nav>
+</header>
+
+<section class="contact-section">
+       <p>le formulaire est encours  de developpement donc je ne reçois <br>pas vos email merci de m'nvoyer un mail a l adresse en bas
+</p>
+    <br><h2>Contactez-moi</h2>
+ 
+    <!-- Formulaire avec JS -->
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Votre nom" required>
+        <input type="email" id="email" placeholder="Votre email" required>
+        <textarea id="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <!-- Adresse visible -->
+    <p>📧 Le mail sera envoyé à : <strong>avoxesportoff@gmail.com</strong></p>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-partners">
+            <h4>Nos partenaires</h4>
+            <div class="partners-logos">
+                <a href="https://x.com/AkuraEsport" title="AKURA Esport"><img src="img/image.png" alt="AKURA Esport"></a>
+                <a href="https://discord.gg/GwQV9Tyf" title="Huna"><img src="img/projet_7.png" alt="Huna"></a>
+                <a href="https://www.twitch.tv/adxkdx" target="_blank" title="Twitch"><img src="img/logo-twitch_578229-259.avif" alt="Twitch logo"></a>
+                <a href="https://www.instant-gaming.com/?igr=adxkdx" target="_blank" title="instant instant-gaming"><img src="img/instant.png" alt="instant-gaming logo"></a>
+                <a href="https://discord.gg/TU9njhPP9Y" target="_blank" title="discord"><img src="img/discord.jpg" alt="discord logo"></a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 ADX Studio</p>
+    </div>
+</footer>
+
+<!-- Script JS pour ouvrir le client mail -->
+<script>
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const toEmail = "avoxesportoff@gmail.com";
+        const subject = encodeURIComponent("Message depuis ADX Studio");
+        const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+        // Ouvre le client mail par défaut avec mailto
+        window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
+    });
+</script>
+
+</body>
+</html>
